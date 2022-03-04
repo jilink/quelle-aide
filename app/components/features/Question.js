@@ -9,12 +9,16 @@ const Question = ({
     question: "question ?",
     choices: [{ text: "Oui" }, { text: "Non" }],
   },
+  questionHistory,
+  setQuestionHistory,
   setCurrentQuestion,
   questions={},
 }) => {
   const handleClick = (choice) => {
     if (choice.nextQuestion) {
-      setCurrentQuestion(questions[choice.nextQuestion]);
+      const next = choice.nextQuestion;
+      setQuestionHistory([...questionHistory, next]);
+      setCurrentQuestion(questions[next]);
     } 
   };
   return (
@@ -31,15 +35,23 @@ const Question = ({
           ))}
         </Flex>
       </QuestionFrame>
-      <PreviousButton />
+      <PreviousButton questions={questions} setCurrentQuestion={setCurrentQuestion} questionHistory={questionHistory} setQuestionHistory={setQuestionHistory} />
     </Flex>
   );
 };
 
-const PreviousButton = ({ onClick }) => {
+const PreviousButton = ({questions, questionHistory =[], setQuestionHistory, setCurrentQuestion }) => {
+  const handleClick = () => {
+    if (questionHistory.length > 1) {
+      setCurrentQuestion(
+        questions[questionHistory[questionHistory.length - 2]]
+      );
+      setQuestionHistory(questionHistory.slice(0, -1));
+    }
+  };
   return (
     <Button
-    disabled={!onClick}
+    disabled={questionHistory.length <= 1}
       m={0}
       w="100%"
       bg="error"
@@ -50,7 +62,7 @@ const PreviousButton = ({ onClick }) => {
       border="none"
       fontSize="xl"
       fontWeight="bold"
-      onClick={onClick}
+      onClick={handleClick}
     >
       Précédent
     </Button>
