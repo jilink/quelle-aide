@@ -9,6 +9,8 @@ const Button = ({ children, ...props }) => {
       boxShadow="dark-lg"
       bg="white"
       color="sunny"
+      minH="50px"
+      m={2}
       {...props}
     >
       {children}
