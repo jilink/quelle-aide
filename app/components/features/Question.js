@@ -6,8 +6,8 @@ import Icon from "~/components/ui/Icon";
 
 const Question = ({
   question = {
-    question: "question ?",
-    choices: [{ text: "Oui" }, { text: "Non" }],
+    question: "Désolé cette partie est manquante pour l'instant",
+    choices: [],
   },
   questionHistory,
   setQuestionHistory,
