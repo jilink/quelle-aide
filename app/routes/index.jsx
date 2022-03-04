@@ -18,7 +18,8 @@ export default function Index() {
         direction="column"
         w={{ base: "80%", md: "40%" }}
         placeSelf="center"
-          textAlign="center"
+        textAlign="center"
+        alignItems="center"
       >
         <Flex
           color="white"
@@ -42,7 +43,7 @@ export default function Index() {
           Aide financière (RSA)
         </ButtonLink>
         <ButtonLink
-        w="80%"
+          w="80%"
           disabled
           bg="sunny"
           color="white"

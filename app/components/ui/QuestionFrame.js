@@ -9,6 +9,7 @@ const QuestionFrame = ({children}) => {
       color="white"
       background="questionBg"
       direction="column"
+      textAlign="center"
       align="center"
       borderTopRadius="15px"
     >
