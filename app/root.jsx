@@ -1,8 +1,21 @@
-import { ChakraProvider } from '@chakra-ui/react'
 import Document from '~/components/Document'
 import {
   Outlet
 } from "remix";
+
+import { extendTheme, ChakraProvider } from '@chakra-ui/react'
+
+const colors = {
+  sun: {
+    500: '#F8A978',
+    600: '#F8A958',
+    700: '#F8A908',
+  },
+  sunny: "#F8A978"
+}
+
+const theme = extendTheme({ colors })
+
 
 
 export function meta() {
@@ -12,7 +25,7 @@ export function meta() {
 export default function App() {
   return (
     <Document>
-      <ChakraProvider>
+      <ChakraProvider theme={theme}>
         <Outlet />
       </ChakraProvider>
     </Document>
