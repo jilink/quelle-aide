@@ -11,7 +11,11 @@ const colors = {
     600: '#F8A958',
     700: '#F8A908',
   },
-  sunny: "#F8A978"
+  sunny: "#F8A978",
+  pageBg: "#51DACF",
+  questionBg: "#48829E",
+  success: "#9EF5CF",
+  error: "#F68787",
 }
 
 const theme = extendTheme({ colors })
