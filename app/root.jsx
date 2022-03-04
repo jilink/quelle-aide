@@ -1,11 +1,9 @@
+import { ChakraProvider } from '@chakra-ui/react'
+import Document from '~/components/Document'
 import {
-  Links,
-  LiveReload,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
+  Outlet
 } from "remix";
+
 
 export function meta() {
   return { title: "New Remix App" };
@@ -13,19 +11,10 @@ export function meta() {
 
 export default function App() {
   return (
-    <html lang="en">
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <Meta />
-        <Links />
-      </head>
-      <body>
+    <Document>
+      <ChakraProvider>
         <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
-      </body>
-    </html>
-  );
+      </ChakraProvider>
+    </Document>
+  )
 }
