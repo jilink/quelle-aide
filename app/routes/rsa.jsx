@@ -1,7 +1,10 @@
+import Page from "~/components/ui/Page";
+import Question from "~/components/features/Question";
+
 export default function RSA() {
   return (
-    <div>
-    rsaa
-    </div>
+    <Page title="RSA" subtitle="Aide financière">
+    <Question/>
+    </Page>
   )
 }

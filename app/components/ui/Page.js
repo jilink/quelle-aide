@@ -1,5 +1,5 @@
 import React from 'react'
-import {Flex, Text} from "@chakra-ui/react"
+import {Flex, Text, Spacer} from "@chakra-ui/react"
 import {ButtonLink} from "~/components/ui/Button";
 
 const Page = ({children, title, subtitle, ...props}) => {
@@ -9,8 +9,10 @@ const Page = ({children, title, subtitle, ...props}) => {
         {title}
       </Text>
       <Text fontSize="sm">{subtitle}</Text>
+      <Spacer />
       {children}
       <ButtonLink minW="80%" to="/">Tout recommencer</ButtonLink>
+      <Spacer />
 
     </Flex>
   );
