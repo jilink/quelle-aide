@@ -1,6 +1,17 @@
+import {Box, Image} from '@chakra-ui/react'
+
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
+    <Box
+    h="100vh"
+    w="100%"
+  backgroundImage="url('/images/background.jpg')"
+  backgroundPosition="center"
+  backgroundRepeat="no-repeat"
+  backgroundSize="cover"
+>
+
       <h1>Welcome to Remix</h1>
       <ul>
         <li>
@@ -27,6 +38,7 @@ export default function Index() {
           </a>
         </li>
       </ul>
+      </Box>
     </div>
   );
 }
