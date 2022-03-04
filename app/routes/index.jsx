@@ -1,5 +1,5 @@
 import { Image, Flex, Text } from "@chakra-ui/react";
-import Button from "~/components/ui/Button";
+import {ButtonLink} from "~/components/ui/Button";
 import Icon from "~/components/ui/Icon";
 
 export default function Index() {
@@ -18,6 +18,7 @@ export default function Index() {
         direction="column"
         w={{ base: "80%", md: "40%" }}
         placeSelf="center"
+          textAlign="center"
       >
         <Flex
           color="white"
@@ -33,19 +34,22 @@ export default function Index() {
           </Text>
           <Text>Les aides pour sans abris simplifiées</Text>
         </Flex>
-        <Button
+        <ButtonLink
+          to="/rsa"
+          w="80%"
           leftIcon={<Icon color="sunny" icon="ant-design:euro-circle-filled" />}
         >
           Aide financière (RSA)
-        </Button>
-        <Button
+        </ButtonLink>
+        <ButtonLink
+        w="80%"
           disabled
           bg="sunny"
           color="white"
           rightIcon={<Icon color="white" icon="clarity:house-solid" />}
         >
           Aide au logement
-        </Button>
+        </ButtonLink>
       </Flex>
     </Flex>
   );

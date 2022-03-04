@@ -1,5 +1,14 @@
 import React from "react";
 import { Button as ChakraButton } from "@chakra-ui/react";
+import { Link } from "remix";
+
+const ButtonLink = ({ children, to="#", ...props }) => {
+  return (
+    <Link to={to}>
+      <Button {...props}>{children}</Button>
+    </Link>
+  );
+};
 
 const Button = ({ children, ...props }) => {
   return (
@@ -18,4 +27,5 @@ const Button = ({ children, ...props }) => {
   );
 };
 
+export { ButtonLink };
 export default Button;
