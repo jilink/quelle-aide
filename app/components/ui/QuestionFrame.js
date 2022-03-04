@@ -3,10 +3,18 @@ import {Flex} from '@chakra-ui/react'
 
 const QuestionFrame = ({children}) => {
   return (
-    <Flex w={{base:"100%", md:"40%"}} m={5} p={5} color="white" background="questionBg" direction="column" align="center">
+    <Flex
+      mb={0}
+      p={5}
+      color="white"
+      background="questionBg"
+      direction="column"
+      align="center"
+      borderTopRadius="15px"
+    >
       {children}
     </Flex>
-  )
+  );
 }
 
 export default QuestionFrame

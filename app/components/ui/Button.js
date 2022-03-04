@@ -14,7 +14,6 @@ const Button = ({ children, ...props }) => {
   return (
     <ChakraButton
       borderRadius="25px"
-      border="1px solid black"
       boxShadow="dark-lg"
       bg="white"
       color="sunny"

@@ -11,7 +11,7 @@ const Page = ({children, title, subtitle, ...props}) => {
       <Text fontSize="sm">{subtitle}</Text>
       <Spacer />
       {children}
-      <ButtonLink minW="80%" to="/">Tout recommencer</ButtonLink>
+      <ButtonLink bg="sunny" color="white" minW="100%" to="/">Tout recommencer</ButtonLink>
       <Spacer />
 
     </Flex>

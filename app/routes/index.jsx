@@ -14,7 +14,7 @@ export default function Index() {
       justify="center"
     >
       <Flex
-        backdropFilter="brightness(0.6)"
+        bg="questionBg"
         direction="column"
         w={{ base: "80%", md: "40%" }}
         placeSelf="center"
