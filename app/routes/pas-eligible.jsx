@@ -9,7 +9,7 @@ export default function RSA() {
     <Page title="RSA" subtitle="Aide financière" bg="lightGreen" color="error">
       <QuestionFrame>
         <Text fontSize="2xl" fontWeight="bold" m={2} mb={4}>
-          Vous n'êtes éligible à une aide financière (RSA)
+          Vous n'êtes pas éligible à une aide financière (RSA)
         </Text>
         <Text mb="3" textAlign="left">
           Nous sommes désolé, votre cas n'est pas encore traité par nos services. Mais il existe peut être des aides pour vous, vous pouvez essayer d'en savoir plus sur le site blog.entourage.social
