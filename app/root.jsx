@@ -24,7 +24,7 @@ const theme = extendTheme({ colors })
 
 
 export function meta() {
-  return { title: "New Remix App" };
+  return { title: "ADF" };
 }
 
 export default function App() {

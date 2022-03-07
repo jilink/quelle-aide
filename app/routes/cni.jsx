@@ -3,7 +3,6 @@ import {Text, Divider, Image} from "@chakra-ui/react";
 import Page from "~/components/ui/Page";
 import QuestionFrame from "~/components/ui/QuestionFrame";
 import Link from "~/components/ui/Link";
-import {SubmitButton} from "~/components/ui/Button";
 
 export default function RSA() {
   return (

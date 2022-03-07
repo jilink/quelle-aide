@@ -33,7 +33,7 @@ export default function Index() {
           <Text fontWeight="bold" fontSize="5xl">
             ADF
           </Text>
-          <Text>Les aides pour sans-abris en partant de rien</Text>
+          <Text as="h1">Les aides pour sans-abris en partant de rien</Text>
         </Flex>
         <ButtonLink
           to="/rsa"
@@ -51,6 +51,7 @@ export default function Index() {
         >
           Aide au logement
         </ButtonLink>
+        <Text mb="2" color="white" fontSize="sm">(En construction)</Text>
       </Flex>
     </Flex>
   );
