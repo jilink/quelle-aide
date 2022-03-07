@@ -5,7 +5,7 @@ import Icon from "~/components/ui/Icon";
 export default function Index() {
   return (
     <Flex
-      h="100vh"
+      h="95vh"
       w="100%"
       backgroundImage="url('/images/background.jpg')"
       backgroundPosition="center"

@@ -6,6 +6,8 @@ import {
   Scripts,
   ScrollRestoration,
 } from "remix";
+import {Link} from "@chakra-ui/react";
+import Footer from "~/components/ui/Footer";
 
 const Document = ({children}) => {
   return (
@@ -22,6 +24,7 @@ const Document = ({children}) => {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <Footer />
       </body>
     </html>
   );
