@@ -2,7 +2,6 @@ import {useState} from 'react';
 import {Text} from "@chakra-ui/react";
 import Page from "~/components/ui/Page";
 import QuestionFrame from "~/components/ui/QuestionFrame";
-import {SubmitButton, ButtonLink} from "~/components/ui/Button";
 import Link from "~/components/ui/Link";
 
 export default function RSA() {
