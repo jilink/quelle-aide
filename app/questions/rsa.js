@@ -28,35 +28,35 @@ const questions = {
     question: "Avez-vous déjà travaillé ?",
     choices: [
       { text: "Oui", nextQuestion: "sejour" },
-      { text: "Non", nextQuestion: "/pas-eligible" },
+      { text: "Non", redirect: "/pas-eligible" },
     ],
   },
   adresse: {
     question: "Avez-vous une adresse postale ?",
     choices: [
       { text: "Oui", nextQuestion: "carte" },
-      { text: "Non", nextQuestion: "/ccas" },
+      { text: "Non", redirect: "/ccas" },
     ],
   },
   carte: {
     question: "Avez-vous une carte d'identité ?",
     choices: [
       { text: "Oui", nextQuestion: "banque" },
-      { text: "Non", nextQuestion: "/cni" },
+      { text: "Non", redirect: "/cni" },
     ],
   },
   banque: {
     question: "Avez-vous un compte bancaire ?",
     choices: [
       { text: "Oui", nextQuestion: "caisse" },
-      { text: "Non", nextQuestion: "/banque" },
+      { text: "Non", redirect: "/banque" },
     ],
   },
   caisse: {
     question: "Avez-vous une caisse d'affiliation ? (CAF, MSA, etc.)",
     choices: [
-      { text: "Oui", nextQuestion: "/demande-rsa" },
-      { text: "Non", nextQuestion: "/caisse" },
+      { text: "Oui", redirect: "/demande-rsa" },
+      { text: "Non", redirect: "/caisse" },
     ],
   },
 };
