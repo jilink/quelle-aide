@@ -16,6 +16,7 @@ const colors = {
   questionBg: "#48829E",
   success: "#9EF5CF",
   error: "#F68787",
+  lightGreen: "#A4F6A5",
 }
 
 const theme = extendTheme({ colors })

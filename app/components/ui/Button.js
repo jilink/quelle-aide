@@ -26,5 +26,26 @@ const Button = ({ children, ...props }) => {
   );
 };
 
-export { ButtonLink };
+const SubmitButton = ({ children, ...props }) => {
+  return (
+    <ChakraButton
+      borderRadius="25px"
+      boxShadow="dark-lg"
+      bg="success"
+      color="black"
+      minH="50px"
+      m={2}
+      type="submit"
+      w="100%"
+      fontWeight="bold"
+      fontSize="xl"
+      textTransform="uppercase"
+      {...props}
+    >
+      {children}
+    </ChakraButton>
+  );
+};
+
+export { ButtonLink, SubmitButton };
 export default Button;
