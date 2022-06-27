@@ -4,13 +4,23 @@ import Link from "~/components/ui/Link"
 
 const Footer = () => {
   return (
-    <Flex justify="space-around" bg="black" color="white" align="center" h="5vh">
-      <Text>Développé par <Link href="https://www.cozy-codeur.fr">Cozy Codeur</Link></Text>
+    <Flex
+      justify="space-around"
+      bg="black"
+      color="white"
+      align="center"
+      minH="5vh"
+    >
       <Text>
-        <Link href="https://www.cozy-codeur.fr/#contact">Contacter</Link>
+        <Link href="https://github.com/jilink/quelle-aide">
+          Contribuer sur GitHub
+        </Link>
       </Text>
-      </Flex>
-  )
+      <Text>
+        <Link href="https://www.cozy-codeur.fr/#contact">Me contacter</Link>
+      </Text>
+    </Flex>
+  );
 }
 
 export default Footer

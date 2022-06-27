@@ -31,9 +31,9 @@ export default function Index() {
           placeSelf="center"
         >
           <Text fontWeight="bold" fontSize="5xl">
-            ADF
+            Quelle Aide
           </Text>
-          <Text as="h1">Les aides pour sans-abris en partant de rien</Text>
+          <Text as="h1">Découvrez les aides auxquelles vous avez droit et la prochaine étape pour y accéder</Text>
         </Flex>
         <ButtonLink
           to="/rsa"

@@ -24,7 +24,7 @@ const theme = extendTheme({ colors })
 
 
 export function meta() {
-  return { title: "ADF" };
+  return { title: "Quelle Aide" };
 }
 
 export default function App() {
