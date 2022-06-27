@@ -1,6 +1,9 @@
 # Quelle Aide
 
-Quelle Aide est un projet en open source qui a pour vocation de simplifier le parcours pour comprendre à quelles aides on peut avoir accès en France et surtout quelle est la prochaine étape pour y accèder selon notre statut et les documents que l'ont possède déjà
+Quelle Aide est un projet en open source qui a pour but de simplifier le parcours pour comprendre à quelles aides on peut avoir accès en France et surtout quelle est la prochaine étape pour y accèder selon notre statut et les documents que l'ont possède déjà.
+Le mieux reste de tester un parcours pour comprendre 😉
+
+[https://quelle-aide.netlify.app](https://quelle-aide.netlify.app)
 
 ## Contribuer
 
