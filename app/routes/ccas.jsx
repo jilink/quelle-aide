@@ -1,9 +1,9 @@
-import {useState} from 'react';
-import {Text, Divider, Image} from "@chakra-ui/react";
+import { useState } from "react";
+import { Text, Divider, Image } from "@chakra-ui/react";
 import Page from "~/components/ui/Page";
 import QuestionFrame from "~/components/ui/QuestionFrame";
 import Link from "~/components/ui/Link";
-import {SubmitButton} from "~/components/ui/Button";
+import { SubmitButton } from "~/components/ui/Button";
 
 export default function RSA() {
   return (
@@ -13,10 +13,13 @@ export default function RSA() {
           Vous devez faire une demande à un CCAS ou à un CIAS
         </Text>
         <Text textAlign="left">
-          Pour faire une demande <Link href="https://www.service-public.fr/particuliers/vosdroits/F17317">cliquez ici</Link> puis choisissez
-          l'onglet "Quelle est la démarche pour en bénéficier ?
+          Pour faire une demande{" "}
+          <Link href="https://www.service-public.fr/particuliers/vosdroits/F17317">
+            cliquez ici
+          </Link>{" "}
+          puis choisissez l'onglet "Quelle est la démarche pour en bénéficier ?
         </Text>
-        <Image src="/images/ccas/img1.png" alt="CCAS"  m="2"/>
+        <Image src="/images/ccas/img1.png" alt="CCAS" m="2" />
         <Divider my="3" />
         <Link
           mb="2"

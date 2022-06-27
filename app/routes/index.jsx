@@ -1,5 +1,5 @@
 import { Image, Flex, Text } from "@chakra-ui/react";
-import {ButtonLink} from "~/components/ui/Button";
+import { ButtonLink } from "~/components/ui/Button";
 import Icon from "~/components/ui/Icon";
 
 export default function Index() {
@@ -33,7 +33,10 @@ export default function Index() {
           <Text fontWeight="bold" fontSize="5xl">
             Quelle Aide
           </Text>
-          <Text as="h1">Découvrez les aides auxquelles vous avez droit et la prochaine étape pour y accéder</Text>
+          <Text as="h1">
+            Découvrez les aides auxquelles vous avez droit et la prochaine étape
+            pour y accéder
+          </Text>
         </Flex>
         <ButtonLink
           to="/rsa"
@@ -51,7 +54,9 @@ export default function Index() {
         >
           Aide au logement
         </ButtonLink>
-        <Text mb="2" color="white" fontSize="sm">(En construction)</Text>
+        <Text mb="2" color="white" fontSize="sm">
+          (En construction)
+        </Text>
       </Flex>
     </Flex>
   );

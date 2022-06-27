@@ -2,10 +2,12 @@ import React from "react";
 import { Button as ChakraButton } from "@chakra-ui/react";
 import { Link } from "remix";
 
-const ButtonLink = ({ children,w, to="#", ...props }) => {
+const ButtonLink = ({ children, w, to = "#", ...props }) => {
   return (
-    <Link style={{minWidth:w, margin:"5px"}} to={to}>
-      <Button minW="100%" {...props}>{children}</Button>
+    <Link style={{ minWidth: w, margin: "5px" }} to={to}>
+      <Button minW="100%" {...props}>
+        {children}
+      </Button>
     </Link>
   );
 };

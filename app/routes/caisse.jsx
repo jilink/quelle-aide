@@ -1,5 +1,5 @@
-import {useState} from 'react';
-import {Text, Image} from "@chakra-ui/react";
+import { useState } from "react";
+import { Text, Image } from "@chakra-ui/react";
 import Page from "~/components/ui/Page";
 import QuestionFrame from "~/components/ui/QuestionFrame";
 import Link from "~/components/ui/Link";
@@ -12,7 +12,7 @@ export default function RSA() {
           Il vous faut une caisse d'affiliation
         </Text>
         <Text textAlign="left" mb="2">
-          Sélectionnez{" "} 
+          Sélectionnez{" "}
           <Link href="https://connect.caf.fr/connexionappli/dist/?forceReload=20211220&contexteAppel=caffr&urlredirect=%2Fwps%2Fmyportal%2Fcaffr%2Fmoncompte%2Ftableaudebord#/aideConnexion?isFromLoginPage=true&origine_demande=web">
             CAF
           </Link>{" "}

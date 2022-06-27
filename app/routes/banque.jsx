@@ -1,5 +1,5 @@
-import {useState} from 'react';
-import {Text, Image} from "@chakra-ui/react";
+import { useState } from "react";
+import { Text, Image } from "@chakra-ui/react";
 import Page from "~/components/ui/Page";
 import QuestionFrame from "~/components/ui/QuestionFrame";
 import Link from "~/components/ui/Link";

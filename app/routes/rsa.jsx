@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import { useState } from "react";
 import Page from "~/components/ui/Page";
 import Question from "~/components/features/Question";
 import questions from "~/questions/rsa";

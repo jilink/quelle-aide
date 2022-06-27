@@ -1,6 +1,6 @@
-import React from 'react'
-import {Flex, Text} from "@chakra-ui/react"
-import Link from "~/components/ui/Link"
+import React from "react";
+import { Flex, Text } from "@chakra-ui/react";
+import Link from "~/components/ui/Link";
 
 const Footer = () => {
   return (
@@ -21,6 +21,6 @@ const Footer = () => {
       </Text>
     </Flex>
   );
-}
+};
 
-export default Footer
+export default Footer;

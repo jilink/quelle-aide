@@ -1,5 +1,5 @@
-import {useState} from 'react';
-import {Text} from "@chakra-ui/react";
+import { useState } from "react";
+import { Text } from "@chakra-ui/react";
 import Page from "~/components/ui/Page";
 import QuestionFrame from "~/components/ui/QuestionFrame";
 import Link from "~/components/ui/Link";
@@ -12,18 +12,16 @@ export default function RSA() {
           Vous êtes éligible à une aide financière (RSA)
         </Text>
         <Text mb="3">
-        Vous allez être redirigé vers service-public.fr après votre choix  :
+          Vous allez être redirigé vers service-public.fr après votre choix :
         </Text>
         <Link
-        mb="2"
+          mb="2"
           href="https://www.service-public.fr/particuliers/vosdroits/F19778"
         >
-        J'ai 25 ans ou plus
+          J'ai 25 ans ou plus
         </Link>
-        <Link
-          href="https://www.service-public.fr/particuliers/vosdroits/F286"
-        >
-        J'ai moins de 25 ans
+        <Link href="https://www.service-public.fr/particuliers/vosdroits/F286">
+          J'ai moins de 25 ans
         </Link>
       </QuestionFrame>
     </Page>

@@ -1,7 +1,7 @@
-import React from 'react'
-import {Flex} from '@chakra-ui/react'
+import React from "react";
+import { Flex } from "@chakra-ui/react";
 
-const QuestionFrame = ({children}) => {
+const QuestionFrame = ({ children }) => {
   return (
     <Flex
       mb={0}
@@ -16,6 +16,6 @@ const QuestionFrame = ({children}) => {
       {children}
     </Flex>
   );
-}
+};
 
-export default QuestionFrame
+export default QuestionFrame;
